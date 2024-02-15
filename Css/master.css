@@ -1,0 +1,132 @@
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 500px;
+    margin: 20px auto;
+}
+
+/****************************************************************************************/
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+    
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+    
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/****************************************************************************************/    
+
+.color_switcher{
+list-style: none;
+margin-bottom: 20px ;
+text-align: center;
+}
+
+.color_switcher li {
+width: 20px;
+height: 20px;
+cursor: pointer; 
+display: inline-block; 
+border-radius: 50%;
+margin: 0px 2px; 
+}
+
+.color_switcher li:first-child {
+background-color: red;    
+}
+.color_switcher li:first-child:hover {
+box-shadow:0px 0px 10px 4px rgb(245, 42, 42) ;    
+}
+
+.color_switcher li:nth-child(2) {
+background-color: rgb(27, 218, 10);    
+}
+.color_switcher li:nth-child(2):hover {
+box-shadow:  0px  0px  10px 4px rgb(75, 230, 61);    
+}
+
+.color_switcher li:nth-child(3) {
+background-color: rgb(10, 31, 218);    
+}
+.color_switcher li:nth-child(3):hover {
+box-shadow:  0px  0px  10px 4px rgb(78, 81, 235);    
+}
+
+.color_switcher li:nth-child(4) {
+background-color: rgb(210, 239, 20);    
+}
+.color_switcher li:nth-child(4):hover {
+box-shadow:  0px  0px  10px 4px rgb(220, 231, 69);    
+}
+
+.color_switcher li:nth-child(5) {
+background-color: rgb(238, 15, 246);    
+}
+.color_switcher li:nth-child(5):hover {
+box-shadow:  0px  0px  10px 4px rgb(241, 52, 232);    
+}
+
+h1 {
+text-align: center;
+margin: 30px ;
+color: red;    
+}
+.D_color {
+background-color: red;
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 30px;
+
+}
+
+.red .container h1 {
+color: red;
+}
+.red .container .D_color {
+background-color: red;   
+}
+
+.green .container h1 {
+color: rgb(27, 218, 10);
+}
+.green .container .D_color {
+background-color: rgb(27, 218, 10);   
+}
+
+.blue .container h1 {
+color: rgb(10, 31, 218);
+}
+.blue .container .D_color {
+background-color:rgb(10, 31, 218);   
+}
+
+.yellow .container h1 {
+color: rgb(210, 239, 20);
+}
+.yellow .container .D_color {
+background-color: rgb(210, 239, 20);   
+}
+
+.purple .container h1 {
+color:rgb(238, 15, 246);
+}
+.purple .container .D_color {
+background-color:rgb(238, 15, 246);   
+}
